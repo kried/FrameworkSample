@@ -8,7 +8,7 @@ targets:
   "test": ["<FrameworkSampleWrapper-debug.module>"]
 default: "main"
 nodes:
-  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/TestFramework.xcframework/":
+  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/":
     is-directory-structure: true
   "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/":
     is-directory-structure: true
@@ -28,7 +28,7 @@ commands:
 
   "PackageStructure":
     tool: package-structure-tool
-    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/TestFramework.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
+    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
     outputs: ["<PackageStructure>"]
     description: "Planning build"
     allow-missing-inputs: true
