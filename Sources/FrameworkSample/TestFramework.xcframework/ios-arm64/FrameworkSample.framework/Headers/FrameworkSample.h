@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char FrameworkSampleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FrameworkSample/PublicHeader.h>
 
-<FrameworkSample/SampleHeader.h>
+<FrameworkSample/SampleView.h>
