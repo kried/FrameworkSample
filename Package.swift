@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "FrameworkSample",
-            targets: ["FrameworkSampleWrapper", "FrameworkSample"]),
+            targets: ["FrameworkSampleWrapper"]),
     ],
     targets: [
         .target(
@@ -23,6 +23,6 @@ let package = Package(
             ]
         ),
         .binaryTarget(name: "FrameworkSample",
-                      path: "Sources/FrameworkSample/TestFramework.xcframework")
+                      path: "Sources/FrameworkSample/FrameworkSample.xcframework")
     ]
 )
