@@ -10,25 +10,28 @@ default: "main"
 nodes:
   "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/":
     is-directory-structure: true
-  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/":
+  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/":
     is-directory-structure: true
 commands:
-  "/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.o":
-    tool: clang
-    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/dummy.m"]
-    outputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.o"]
-    description: "Compiling FrameworkSampleWrapper dummy.m"
-    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","x86_64-apple-macosx10.10","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FrameworkSampleWrapper","-I","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/include","-fmodules-cache-path=/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/ModuleCache","-framework","UIKit","-framework","Foundation","-MD","-MT","dependencies","-MF","/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.d","-c","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/dummy.m","-o","/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.o"]
-    deps: "/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.d"
+  "/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib":
+    tool: copy-tool
+    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/SampleView.xib"]
+    outputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib"]
+    description: "Copying /Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/SampleView.xib"
 
   "<FrameworkSampleWrapper-debug.module>":
     tool: phony
-    inputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleWrapper.build/dummy.m.o"]
+    inputs: []
     outputs: ["<FrameworkSampleWrapper-debug.module>"]
+
+  "FrameworkSampleWrapper-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib"]
+    outputs: ["<FrameworkSampleWrapper-debug.module-resources>"]
 
   "PackageStructure":
     tool: package-structure-tool
-    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
+    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
     outputs: ["<PackageStructure>"]
     description: "Planning build"
     allow-missing-inputs: true
