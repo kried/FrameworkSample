@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/FrameworkSample-umbrella.h</key>
+		<data>
+		6dIyp30ntqLzXh1Vz6/JRjuSLVU=
+		</data>
 		<key>Headers/FrameworkSample.h</key>
 		<data>
-		QQFM2uYF2Wwn1TeX8S99+DpTedU=
+		UJy8utRBKmA0ExW26HlKM1vnO2M=
 		</data>
 		<key>Headers/SampleView.h</key>
 		<data>
@@ -18,20 +22,39 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		3sWSotB4ql9fIx/RAKnxnYRfgcw=
+		N9rCAnHobXmmLDaZYREAHE9KUwI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/FrameworkSample.h</key>
+		<key>Headers/FrameworkSample-umbrella.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6dIyp30ntqLzXh1Vz6/JRjuSLVU=
+			</data>
 			<key>hash2</key>
 			<data>
-			3pWUXvJeQ9UnnX41xyTJuKa/AsJcz955O762SfUN7ho=
+			74uPjqtH7o0T2HS8WBB+TpGmq+uclunqp/7EASbBB10=
+			</data>
+		</dict>
+		<key>Headers/FrameworkSample.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UJy8utRBKmA0ExW26HlKM1vnO2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yg6ExgqYHHdpvTHpzoLwjEoF38QLnlQgNgI2z9N3UU4=
 			</data>
 		</dict>
 		<key>Headers/SampleView.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0TTPPSwGryVxbVA8Jz/RF3umPUg=
+			</data>
 			<key>hash2</key>
 			<data>
 			tpbQZgb7ztnp2PCGltYNMviT5Fw5t30NmPDctx3wNFg=
@@ -39,9 +62,13 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			N9rCAnHobXmmLDaZYREAHE9KUwI=
+			</data>
 			<key>hash2</key>
 			<data>
-			3ibEd/pmGa3O/GtbsR+wmXsPNcMU+O5z/0I504deqX8=
+			yV+DenG83bDBNxt1fTTo6wC0FaR3yDYL6evuaJgd6B8=
 			</data>
 		</dict>
 	</dict>

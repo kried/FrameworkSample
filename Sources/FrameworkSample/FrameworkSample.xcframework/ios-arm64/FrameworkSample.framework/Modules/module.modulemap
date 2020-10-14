@@ -1,6 +1,11 @@
-framework module FrameworkSample {
-  umbrella header "FrameworkSample.h"
+framework module FrameworkSampleWrapper {
+  umbrella header "FrameworkSample-umbrella.h"
 
   export *
   module * { export * }
+
+  link framework "Foundation"
+  link framework "UIKit"
+
+  header "SampleView.h"
 }

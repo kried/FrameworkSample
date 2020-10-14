@@ -5,7 +5,7 @@
 //  Created by Nastassia Makaranka on 10/14/20.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for FrameworkSample.
 FOUNDATION_EXPORT double FrameworkSampleVersionNumber;
