@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "FrameworkSample",
-            targets: ["FrameworkSampleWrapper"]),
+            targets: ["FrameworkSampleWrapper", "FrameworkSample"]),
     ],
     targets: [
         .target(
