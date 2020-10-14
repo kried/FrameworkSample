@@ -10,14 +10,14 @@ default: "main"
 nodes:
   "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/":
     is-directory-structure: true
-  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/":
+  "/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/":
     is-directory-structure: true
 commands:
-  "/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib":
+  "/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleLib_FrameworkSampleWrapper.bundle/SampleView.xib":
     tool: copy-tool
-    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/SampleView.xib"]
-    outputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib"]
-    description: "Copying /Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/SampleView.xib"
+    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/SampleView.xib"]
+    outputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleLib_FrameworkSampleWrapper.bundle/SampleView.xib"]
+    description: "Copying /Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/SampleView.xib"
 
   "<FrameworkSampleWrapper-debug.module>":
     tool: phony
@@ -26,12 +26,12 @@ commands:
 
   "FrameworkSampleWrapper-debug.module-resources":
     tool: phony
-    inputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSample_FrameworkSampleWrapper.bundle/SampleView.xib"]
+    inputs: ["/Users/anamak/Samples/FrameworkSample/.build/x86_64-apple-macosx/debug/FrameworkSampleLib_FrameworkSampleWrapper.bundle/SampleView.xib"]
     outputs: ["<FrameworkSampleWrapper-debug.module-resources>"]
 
   "PackageStructure":
     tool: package-structure-tool
-    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/Resources/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
+    inputs: ["/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSample/FrameworkSample.xcframework/","/Users/anamak/Samples/FrameworkSample/Sources/FrameworkSampleWrapper/","/Users/anamak/Samples/FrameworkSample/Package.swift","/Users/anamak/Samples/FrameworkSample/Package.resolved"]
     outputs: ["<PackageStructure>"]
     description: "Planning build"
     allow-missing-inputs: true

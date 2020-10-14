@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "FrameworkSample",
+    name: "FrameworkSampleLib",
     products: [
         .library(
             name: "FrameworkSample",
@@ -16,7 +16,6 @@ let package = Package(
             dependencies: [
                 .target(name: "FrameworkSample", condition: .when(platforms: .some([.iOS]))),
             ],
-            path: "Sources/FrameworkSample/Resources",
             resources: [.process("SampleView.xib")],
             linkerSettings: [
                 .linkedFramework("UIKit"),

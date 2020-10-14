@@ -1,4 +1,4 @@
-framework module FrameworkSample {
+framework module FrameworkSampleLib {
   umbrella header "FrameworkSample-umbrella.h"
 
   export *

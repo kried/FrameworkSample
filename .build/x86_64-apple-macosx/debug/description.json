@@ -3,17 +3,17 @@
 
   ],
   "copyCommands" : {
-    "\/Users\/anamak\/Samples\/FrameworkSample\/.build\/x86_64-apple-macosx\/debug\/FrameworkSample_FrameworkSampleWrapper.bundle\/SampleView.xib" : {
+    "\/Users\/anamak\/Samples\/FrameworkSample\/.build\/x86_64-apple-macosx\/debug\/FrameworkSampleLib_FrameworkSampleWrapper.bundle\/SampleView.xib" : {
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "\/Users\/anamak\/Samples\/FrameworkSample\/Sources\/FrameworkSample\/Resources\/SampleView.xib"
+          "name" : "\/Users\/anamak\/Samples\/FrameworkSample\/Sources\/FrameworkSampleWrapper\/SampleView.xib"
         }
       ],
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "\/Users\/anamak\/Samples\/FrameworkSample\/.build\/x86_64-apple-macosx\/debug\/FrameworkSample_FrameworkSampleWrapper.bundle\/SampleView.xib"
+          "name" : "\/Users\/anamak\/Samples\/FrameworkSample\/.build\/x86_64-apple-macosx\/debug\/FrameworkSampleLib_FrameworkSampleWrapper.bundle\/SampleView.xib"
         }
       ]
     }
