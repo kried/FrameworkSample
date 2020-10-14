@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) IBOutlet UILabel *label;
 
-- (SampleView *)nib;
++ (SampleView *)nib;
 
-- (SampleView *)nibFromManagerBundle;
++ (SampleView *)nibFromManagerBundle;
 
 @end
 
