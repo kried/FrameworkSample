@@ -16,7 +16,7 @@ let package = Package(
             dependencies: [
                 .target(name: "FrameworkSample", condition: .when(platforms: .some([.iOS]))),
             ],
-            resources: [.process("SampleView.xib")],
+            resources: [.process("Sources/FrameworkSample/SampleView.xib")],
             linkerSettings: [
                 .linkedFramework("UIKit"),
                 .linkedFramework("Foundation")
